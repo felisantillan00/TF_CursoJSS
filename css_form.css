@@ -1,0 +1,126 @@
+/* Para el formulario */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #a8e6cf;
+  font-family: Arial, Helvetica, sans-serif;  
+}
+
+.form-contact {
+  background: #FFF;
+  width: 400px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 7px 13px 37px rgba(0, 0, 0, .8);
+}
+
+header {
+  width: 100%;
+  background: #ff165d;
+  overflow: hidden;
+  color: white;
+}
+
+header span {
+  font-size: 100px;
+  display: block;
+  text-align: center;
+  padding: 2.5rem;
+}
+
+.contact {
+  padding: .8rem;
+  overflow: hidden;
+  color: gray;
+}
+
+.contact label, .contact input, .contact textarea {
+  display: block;
+  width: 100%;
+  margin-bottom: 5px;   
+}
+
+.contact label {
+  font-weight: 700;
+}
+
+.contact input:not([type='submit']), .contact textarea {
+  border: none;
+  border-bottom: 2px solid #ff165d;
+  margin-bottom: 10px;
+  font-size: 20px;
+  outline: none;
+  color: gray;
+}
+
+.contact textarea {
+  min-height: 100px;
+}
+
+input[type='submit'] {
+  padding: 10px;
+  background: #ff165d;
+  background: #ff165d;
+  border: none;
+  color: white;
+  font-size: 20px;
+  /* pointer-events: none; */
+  cursor: pointer;
+
+}
+/* Para el index */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f2f2f2;
+}
+
+.container {
+  text-align: center;
+  padding: 30px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  margin-top: 0;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #4caf50;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #45a049;
+}
+.btn {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #4caf50;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #45a049;
+  color: #fff; /* Opcional: Cambiar el color del texto en el hover */
+  text-decoration: none; /* Opcional: Remover la subrayado en el hover */
+}

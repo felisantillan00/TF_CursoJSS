@@ -1,0 +1,26 @@
+/* Agrega espacios entre las secciones */
+section {
+  margin-bottom: 20px;
+}
+
+/* Agrega un margen superior al encabezado */
+header {
+  margin-top: 20px;
+}
+
+/* Agrega un margen inferior al encabezado */
+header h1 {
+  margin-bottom: 20px;
+}
+
+/* Agrega un margen inferior a los elementos del formulario */
+#formulario form label,
+#formulario form input,
+#formulario form p {
+  margin-bottom: 10px;
+}
+
+/* Agrega un margen inferior al botón del formulario */
+#formulario form button {
+  margin-bottom: 20px;
+}

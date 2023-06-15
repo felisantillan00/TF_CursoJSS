@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Juego de Preguntas y Respuestas</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Juego de Preguntas y Respuestas</h1>
+  </header>
+
+  <section id="juego">
+    <h2>Juego de Preguntas y Respuestas</h2>
+    <p id="pregunta"></p>
+    <ul id="opciones">
+      <li><input type="radio" name="respuesta" value="1"> <span id="opcion1"></span></li>
+      <li><input type="radio" name="respuesta" value="2"> <span id="opcion2"></span></li>
+      <li><input type="radio" name="respuesta" value="3"> <span id="opcion3"></span></li>
+    </ul>
+    <button id="enviarRespuesta">Enviar</button>
+    <p id="mensaje"></p>
+    <p id="puntuacion">Puntuación: 0</p>
+    <button id="reiniciar">Reiniciar Juego</button>
+  </section>
+
+  <script src="jquery-3.7.0.js"></script>
+  <script src="javascript.js"></script>
+</body>
+</html>
