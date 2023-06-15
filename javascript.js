@@ -16,34 +16,27 @@ $(document).ready(function() {
         Swal.fire('Error', 'Por favor, complete todos los campos.', 'error');
         return;
       }
-    
       // Validar la edad
-      if (edad < 18 || edad > 100) {
+      if (edad < 18 || edad > 80) {
         Swal.fire('Error', 'La edad debe estar entre 18 y 100 años.', 'error');
         return;
       }
-    
       // Validar el formato del email
       var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
       if (!emailRegex.test(email)) {
         Swal.fire('Error', 'Ingrese un email válido.', 'error');
         return;
       }
-    
       // Validar repeticion de contraseña
       if (contrasenia !== rcontrasenia) {
         Swal.fire('Error', 'La contraseñas ingresadas no coinciden', 'error');
         return;
       }
-    
-    
       //Guarda los datos de inicio de sesion en localstorage
       localStorage.setItem("nombreUsuario",nombreUsuario);
       localStorage.setItem("contrasenia",contrasenia);
-    
       // Limpiar los campos del formulario
       $('#formulario')[0].reset();
-    
       // Mostrar mensaje de éxito
       Swal.fire({
       title: 'Registro exitoso',
@@ -58,8 +51,6 @@ $(document).ready(function() {
       });
    
     });
-  });
-   
   //Select llamando a la api de paises del mundo
   $(document).ready(function() {
     $.ajax({
@@ -81,13 +72,11 @@ $(document).ready(function() {
   
     });
   });
-  
   //Select llamando a las provincias de ARG
   $(document).ready(function() {
     $.ajax({
       url: "https://apis.datos.gob.ar/georef/api/provincias",
       type: "GET",
-  
       success: function(data) {
         var provincias = data.provincias;
   
@@ -96,14 +85,12 @@ $(document).ready(function() {
           $("#selectProvincias").append("<option value='" + provinciasName + "'>" + provinciasName + "</option>");
         }
       },
-  
       error: function() {
         console.log("Error al obtener los datos de provincias")
     }
   
     });
   });
-  
   //Select llamando a las ciudades de La Pampa
   $(document).ready(function() {
     $.ajax({
@@ -125,12 +112,12 @@ $(document).ready(function() {
   
     });
   });
-  
   //Validacion boton para volver a inicio
   $('#botonMenu').click(function() {  
     window.location.href = "index.html";
   });
-  
+});
+
   // Javascript de JUEGO DE ADIVINANZAS-------------------
   
   //INICIO DE SESION EN ADIVINANZAS1
