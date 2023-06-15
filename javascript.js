@@ -5,7 +5,7 @@ $(document).ready(function() {
    
       var nombre = $("#nombre").val();
       var apellido = $("#apellido").val();
-      var edad = $("#edad").val();
+      var edad = parseInt($("#edad").val());
       var email = $("#email").val();
       var nombreUsuario = $("#nombreUsuario").val();
       var contrasenia = $("#contrasenia").val();
@@ -17,7 +17,7 @@ $(document).ready(function() {
         return;
       }
       // Validar la edad
-      if (edad < 18 || edad > 80) {
+      if (edad << 18 || edad >> 80) {
         Swal.fire('Error', 'La edad debe estar entre 18 y 100 años.', 'error');
         return;
       }
